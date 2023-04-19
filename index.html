@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <h2>
+        <div class="search-box">
+          <input type="text" placeholder="Enter city name" id="search-input" />
+          <button type="button" class="btn btn-primary">Search</button>
+        </div>
+      </h2>
+      <h3>
+        <p>Nairobi,Kenya</p>
+        <div class="currentTime"></div>
+        <img src="images/thunderstorm.jpg" />
+        <span class="current-temperature" onclick="convertTemperature()"
+          ><span class="temperature-value">26</span>
+          <span class="temperature-unit">°C</span>
+        </span>
+
+        <p>Scattered Thunderstorm</p>
+      </h3>
+      <h4>
+        <div class="row">
+          <div class="col">
+            Fri<br />5pm<br />
+            <img src="images/thunderstorm.jpg" width="50px" />
+            <br /><strong>26°</strong>
+          </div>
+
+          <div class="col">
+            Sat<br />5am<br />
+            <img src="images/thunderstorm.jpg" width="50px" />
+            <br /><strong>23°</strong>
+          </div>
+
+          <div class="col">
+            Sun<br />9am<br />
+            <img src="images/thunderstorm.jpg" width="50px" />
+            <br /><strong>23°</strong>
+          </div>
+
+          <div class="col">
+            Mon<br />12pm<br />
+            <img src="images/thunderstorm.jpg" width="50px" />
+            <br /><strong>24°</strong>
+          </div>
+
+          <div class="col">
+            Tue<br />3pm<br />
+            <img src="images/thunderstorm.jpg" width="50px" />
+            <br /><strong>24°</strong>
+          </div>
+
+          <div class="col">
+            Wed<br />7pm<br />
+            <img src="images/thunderstorm.jpg" width="50px" />
+            <br /><strong>25°</strong>
+          </div>
+        </div>
+      </h4>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
